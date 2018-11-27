@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    head
+     <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+     <link href="https://getbootstrap.com/docs/4.1/examples/sign-in/signin.css" rel="stylesheet">
+    body
+    .container-fluid
+        <img src="/images/Tate-Modern-logo-bw.jpeg" alt="Smiley face" height="80" width="300">
+        <body class="text-center">
+        <form class="form-signin" method = 'post', action ='/users/login'>
+         <h1 class="h3 mb-3 font-weight-normal">Please enter your information</h1>
+         <label for="email" class="sr-only">Email address</label>
+         <input type="email" id="email" name ="email" class="form-control" placeholder="Email address" required autofocus>
+         <label for="password" class="sr-only">Password</label>
+         <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+         
+        .container-fluid
+        p 
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+        </form>
